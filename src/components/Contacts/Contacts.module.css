@@ -1,0 +1,43 @@
+.container {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Futura PT';
+    color: #474A51;
+}
+
+.content {
+    width: 1280px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Lovelace';
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.textMargin{
+    margin-bottom: 20px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

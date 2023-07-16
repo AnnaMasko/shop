@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    width: 1400px;
+    height: 1503px; 
+    flex-direction: column;  
+    justify-content: space-around;     
+    color: #474A51;
+    font-family: 'Futura PT';
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 1062px;
+    margin-left: 60px;
+    
+}
+.title {
+    font-family: 'Lovelace';
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subTitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    margin-bottom: 10px;
+}
+.textUpp{
+    text-transform: uppercase;
+    margin-top: 50px;
+}

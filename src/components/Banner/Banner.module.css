@@ -1,0 +1,89 @@
+@import url(../../assets/fonts/fonts.css);
+
+.container {
+    display: flex;
+    width: 1400px;
+    height: 1400px;
+    flex-direction: column;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+    width: 1400px;
+    height: 700px;
+    background-image: url(../../assets/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.content {
+    position: relative;
+    display: flex;
+    width: 351px;
+    height: 149px;
+    flex-direction: column;
+    top: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.title {
+    font-family: Lovelace;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+}
+
+.blockContent {
+    width: 700px;
+    height: 600px;
+    background-image: url(../../assets/images/new.png);
+}
+
+.blockContentLeft {
+    background-image: url(../../assets/images/sale.png);
+    background-size: 700px 600px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.blockDescription {
+    display: flex;
+    flex-direction: column;
+    width: 146px;
+    position: relative;
+    margin: auto;
+    margin-top: 244px;
+    gap: 10px;
+
+}
+
+.backgroundButton{
+    background-color: #DDE8F6;
+}
+
+.colorTextButton{
+    color: white;
+    border: 1px solid white;
+}

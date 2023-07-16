@@ -1,0 +1,63 @@
+.container {
+    width: 1400px;
+    height: 2036px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    font-family: 'Lovelace';
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+    margin-bottom: 96px;
+    margin-top: 50px;
+
+}
+
+.content {
+    width: 952px;
+    height: 1591px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 298px;
+    height: 497px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.imageCard {
+    width: 298px;
+    height: 420px;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-family: 'Futura PT';
+    font-size: 24px;
+    line-height: 31.2px;
+
+}
+
+.price {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
+
+.marginButton{
+    margin-top: 80px;
+}

@@ -1,0 +1,109 @@
+.container{
+    display: flex;
+    
+    width: 1280px;
+    height: 610px;
+    flex-wrap: wrap;
+    color: #474A51;
+    
+font-family: 'Futura PT';
+font-size: 16px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+margin-bottom: 160px;
+margin-top: 81px;
+
+
+}
+.product{
+    display: flex;
+    width: 1030px;
+    justify-content: space-between;
+align-items: space-between;
+
+   
+}
+.image{
+    width: 407px;
+    height: 610px;
+}
+
+.imageGallery{
+    display: flex;
+    flex-direction: column;
+    width: 188px;
+    justify-content: space-between;
+}
+
+.imageSize{
+    width: 188px;
+    height: 290px;
+}
+
+.description{
+    width: 281px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.title{
+font-family: 'Lovelace';
+font-size: 36px;
+font-weight: 400;
+line-height: 47px;
+letter-spacing: 0em;
+text-transform: uppercase;
+
+}
+.price{
+    font-size: 24px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0.02em;
+
+}
+
+.size{
+    display: flex;
+    max-width: 219px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 31.2px;
+    
+
+}
+.sizeItem{
+    padding-left: 5.2px;
+    padding-right: 5.2px;
+
+}
+.sizeItem:hover {
+    background-color: #285DA1;
+    color: white;   
+}
+
+.text{
+color: #9F9D9D;
+}
+
+.colorButton{
+    background: #DDE8F6;
+    border: none;
+    
+    width: 236px;
+    height: 51px;
+    align-items: center;
+    
+}
+
+.textDescription{
+    display: flex;
+    flex-direction: column;
+}

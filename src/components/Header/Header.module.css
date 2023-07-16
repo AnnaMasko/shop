@@ -1,0 +1,9 @@
+@import "../../assets/fonts/fonts.css";
+
+.container{
+    display: flex;
+    width: 1400px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}

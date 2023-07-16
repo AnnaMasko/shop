@@ -1,0 +1,97 @@
+.container {
+    width: 1400px;
+
+    display: flex;
+    padding-left: 60px;
+    flex-wrap: wrap;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    height: 687px;
+    font-family: 'Futura PT';
+    font-size: 16px;
+    line-height: 20.8px;
+}
+
+.title {
+    font-family: 'Lovelace';
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+}
+
+.margin {
+    margin-bottom: 50px;
+}
+
+.cardOveralls {
+    width: 685px;
+    height: 776px;
+    margin-left: 248px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageOveralls {
+    width: 685px;
+    height: 740px;
+    margin-bottom: 15px;
+}
+
+.textCloth {
+    font-family: 'Futura PT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    width: 250px;
+    margin-top: 15px;
+}
+
+.cardClassic_shirt {
+    display: flex;
+    flex-direction: column;
+    width: 298px;
+    height: 511px;
+}
+
+.shirtRed{
+    display: flex;
+    flex-direction: column;
+    width: 516px;
+    height: 831px;
+    margin-left: 278px;
+    margin-top: 101px;
+}
+
+.content{
+    display: flex;
+    width: 1400px;
+    justify-content: space-between;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.overallsBlack{
+    width: 410;
+    height: 656px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shirt_{
+    width: 625px;
+    height: 474px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+
+}
+
+.cardMargin{
+margin: -38px 496px 80px 606px;    
+}
