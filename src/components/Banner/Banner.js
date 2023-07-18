@@ -1,5 +1,5 @@
 import styles from './Banner.module.css'
-import { Button } from '../../Button/Button'
+import { Button } from '../../common/Button/Button'
 
 export const Banner = () =>{
     return(

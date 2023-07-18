@@ -1,4 +1,4 @@
-import { Button } from '../../Button/Button'
+import { Button } from '../../common/Button/Button'
 import { catalog } from '../../data/catalog'
 import { Banner } from '../Banner/Banner'
 import { Lookbook } from '../Lookbook/Lookbook'

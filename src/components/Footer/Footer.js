@@ -1,4 +1,4 @@
-import { Button } from '../../Button/Button'
+import { Button } from '../../common/Button/Button'
 import logoicon from '../../assets/images/logoicon.svg'
 import styles from './Footer.module.css'
 import { Link } from 'react-router-dom'

@@ -8,12 +8,16 @@ export const Basket = () => {
     const [basket, setBasket] = useState([])
     const [value, setValue] = useState('');
 
-    function chengeSelect(event) {
-        setValue(event.target.value);
-        //console.log(value)
+    function changeSelect(event) {
+        
+        console.log(event.currentTarget.name)
+        console.log(event.target)
+        if (event.currentTarget) 
+        setValue(event.currentTarget.value);        
      }
 
     //console.log(catalog)
+
 
     useEffect(() => {
         const basketState = [];
@@ -31,18 +35,23 @@ export const Basket = () => {
     //console.log(basket)
 
     const cardPrice = (product) =>{
-        console.log(product)
-        return product.price * value
-        
+        //console.log(product)
+        return product.cartPrice = product.price * value
+    }
+
+    const totalPrice = () =>{
+        return basket.reduce((sum, product)=> sum + product.cartPrice, 0 )
         
     }
 
+    
 
 
     return (
         <div className={styles.container}>
             <span className={styles.title} > Корзина</span>
             <div className={styles.order}>
+                <div>
                 {
                     basket.map((product) => (
                         <div key={product.id} className={styles.productBasket}>
@@ -56,9 +65,15 @@ export const Basket = () => {
 
                                 <div>
                                     <label className={styles.margin}>Количество</label>
-                                    <select name='selectQuantity' className={styles.selectSize} 
-                                    value={value}
-                                    onChange={chengeSelect}>
+                                    
+                                    <select 
+                                    //name='selectQuantity' 
+                                    className={styles.selectSize} 
+                                    name={product.id}
+                                    value={value}                                    
+                                    //onChange={changeSelect} 
+                                    onChange={(event)=>{ setValue(event.target.value)}}
+                                    >
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -67,13 +82,13 @@ export const Basket = () => {
                                         <option value="6">6</option>
                                     </select>
                                 </div>
-
                                 <span className={styles.colorText}>Артикул: {product.vendor_code}</span>
                                 <span className={styles.fontSize}>{cardPrice(product)} ₽</span>
                             </div>
                         </div>
 
                     ))}
+                    </div>
                     <div>
 
                 <div className={styles.promo}>
@@ -86,7 +101,7 @@ export const Basket = () => {
                     </div>
 
                     <div className={styles.promo}>
-                        <span className={styles.promoTitle}>Сумма заказа</span>
+                        <span className={styles.promoTitle}>Сумма заказа {totalPrice()} ₽</span>
                         <span className={styles.promoTitle}>Скидка</span>
                         <span className={styles.promoTitle}>Итого</span>
                         <Button title='Оформить заказ'/>

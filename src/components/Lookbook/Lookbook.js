@@ -1,4 +1,4 @@
-import { Button } from '../../Button/Button'
+import { Button } from '../../common/Button/Button'
 import lookbook from '../../assets/images/lookbook.png'
 import styles from './Lookbook.module.css'
 

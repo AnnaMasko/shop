@@ -30,6 +30,7 @@ export const catalog = [
                 compound: 'Основная ткань: полиэстер 100% Подкладка: вискоза 95%, эластан 5%',
                 care_advice: 'Ручная стирка',
                 cartCount: 0,
+                cartPrice: 0,
                 color: 'Цветочный принт'
             },
             {
