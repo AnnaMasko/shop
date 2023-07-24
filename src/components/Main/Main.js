@@ -1,10 +1,17 @@
+import { Route } from 'react-router'
 import { Button } from '../../common/Button/Button'
 import { catalog } from '../../data/catalog'
 import { Banner } from '../Banner/Banner'
 import { Lookbook } from '../Lookbook/Lookbook'
 import styles from './Main.module.css'
+import { useNavigate } from 'react-router'
 
 export const Main = () => {
+    let navigate = useNavigate()
+    const showAll = () =>{
+        navigate('/catalog')  
+    }
+
    
     return (
        
@@ -31,7 +38,10 @@ export const Main = () => {
                         )
                     })
                 }
-                <Button title={'Посмотреть все'} addStyles={styles.alignButton}/>
+                <Button title={'Посмотреть все'} addStyles={styles.alignButton}
+                 handleClick={() => showAll()}
+                
+                />
                 <Lookbook/>
             </div>
             

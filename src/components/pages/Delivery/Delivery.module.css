@@ -1,28 +1,17 @@
 .container {
     display: flex;
     width: 1400px;
-    height: 1503px; 
+    
     flex-direction: column;  
     justify-content: space-around;     
     color: #474A51;
     font-family: 'Futura PT';
+    align-items: center;
 }
 .content{
     display: flex;
     flex-direction: column;
-    width: 1062px;
-    margin-left: 60px;
-    
-}
-.title {
-    font-family: 'Lovelace';
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 68px;
-    letter-spacing: 0em;
-    text-transform: uppercase;
-    margin-right: auto;
-    margin-left: auto;
+    width: 1280px;    
 }
 
 .subTitle {
@@ -44,4 +33,69 @@
 .textUpp{
     text-transform: uppercase;
     margin-top: 50px;
+}
+
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+    .content{
+        width: 1210px; 
+    }
+}
+
+@media (max-width: 1152px) {
+    .container {
+        max-width: 1152px;
+    }
+    .content{
+        width: 1082px; 
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    .content{
+        width: 954px; 
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
+    .content{
+        width: 730px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .content{
+        width: 698px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 425px;
+    }
+    .content{
+        width: 390px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+    .content{
+        width: 300px;
+    }
 }

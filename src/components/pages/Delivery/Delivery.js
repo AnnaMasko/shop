@@ -1,9 +1,10 @@
 import styles from './Delivery.module.css'
+import { Title } from '../../../common/Title/Title'
 
 export const Delivery = () => {
     return (
         <div className={styles.container}>
-            <span className={styles.title}>доставка и оплата</span>
+            <Title title='доставка и оплата' />
 
             <div className={styles.content}>
 

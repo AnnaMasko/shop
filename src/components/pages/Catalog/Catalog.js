@@ -4,6 +4,7 @@ import { Button } from '../../../common/Button/Button'
 import { useParams } from 'react-router'
 import { Card } from './Card'
 import { Link } from 'react-router-dom'
+import {Title} from '../../../common/Title/Title'
 
 
 export const Catalog = () => {
@@ -26,17 +27,15 @@ export const Catalog = () => {
 
     return (
         <div className={styles.container}>
-            <span className={styles.title}>Каталог</span>
+             <Title title='Каталог' />
             <div className={styles.content}>
-                
                 {
                     catalog.map((element) => {
                         //if (element.id > 7) 
                         //console.log(element.category)
-                        console.log(url.url)
+                       // console.log(url.url)
                         
-                        if (url.url === element.category)
-                        
+                        if (url.url === element.category)                        
                         return (
                             <div className={styles.card} key={element.id}>
                                 <Link to = {`/${element.category}/${element.id}`}><img

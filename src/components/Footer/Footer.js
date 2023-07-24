@@ -22,19 +22,19 @@ export const Footer = () => {
                 <span className={styles.info}>Подпишитесь на рассылку и первыми получайте информацию о новинках, скидках и специальных предложениях</span>
                 <div className={styles.subscribe}>
                 <input placeholder='Введите ваш E-mail' type='text' className={styles.input}/>
-                <Button title={'подписаться'} />
+                <Button title={'подписаться'} addStyles={styles.sizeButton}/>
                 </div>
 
                 <div className={styles.content}>
                     <span className={styles.contentTitle}>Каталог</span>
-                    <span>Новинки</span>
-                    <span>Распродажа</span>
+                    <span className={styles.mobileVersion}>Новинки</span>
+                    <span className={styles.mobileVersion}>Распродажа</span>
                     <span>Готовые образы</span>
                     <Link to='catalog'>Все товары</Link>
 
                     <span className={styles.contentTitle}>Покупателям</span>
-                    <span>Личный кабинет</span>
-                    <span>Таблица размеров</span>
+                    <span className={styles.mobileVersion}>Личный кабинет</span>
+                    <span className={styles.mobileVersion}>Таблица размеров</span>
                     <Link to='delivery'>Доставка и оплата</Link>
                     <span>Возврат</span>
 
@@ -42,7 +42,7 @@ export const Footer = () => {
                     <Link to='about'>О бренде</Link>
                     <Link to='contacts'>Контакты</Link>
                     <span>Оферта</span>
-                    <span>Политика конфиденциальности</span>
+                    <span>Политика</span>
                 </div>
             </div>
         </div>

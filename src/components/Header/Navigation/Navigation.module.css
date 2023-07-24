@@ -1,5 +1,6 @@
 .navigation {
     display: flex;
+    flex-flow: wrap;
     width: 368px;
     height: 18px;
     align-items: center;
@@ -35,19 +36,40 @@
     z-index: 1;
     background: white;
     padding-left: 30px;
-    
-
 }
-.item{
+
+.item {
     text-transform: none;
     text-decoration: none;
     color: #474A51;
+    font-family: 'Futura PT';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
 
-font-family: 'Futura PT';
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0em;
+@media (max-width: 1024px) {
+	.navigation {
+		display: none;
+	}
+    .mobnav {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 150px;
+        justify-content: space-around;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        z-index: 1;
+        background-color: white;
+    }
+}
 
-
+@media (max-width: 500px) {
+    .mobnav {
+        top: 50px;
+        left: 45px;
+    }
 }

@@ -1,9 +1,9 @@
 import styles from './Button.module.css'
 
-export const Button = ({title, addStyles, handleClick}) =>{
+export const Button = ({title, addStyles, handleClick, id}) =>{
     return(
         <button
-        //id={id}
+        id={id}
         onClick={handleClick}
         className={`${styles.button} ${addStyles}`}
         >         

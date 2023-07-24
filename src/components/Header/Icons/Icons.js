@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom'
 export const Icons = ()=>{
     return(
         <div className={styles.container} >
-            <img src = {search} alt='search'/>
-            <img src = {authorization} alt='authorizacion'/>
-            <img src = {favorites} alt='favorites'/>
+            <img src = {search} alt='search' className={styles.mobileVersion}/>
+            <img src = {authorization} alt='authorizacion' className={styles.mobileVersion}/>
+            <img src = {favorites} alt='favorites'className={styles.mobileVersion}/>
             <Link to='basket'> <img src = {basket} alt='basket'/></Link>
         </div>
     )

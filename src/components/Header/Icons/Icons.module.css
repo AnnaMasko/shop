@@ -4,3 +4,13 @@
     width: 140px;
     justify-content: space-between;
 }
+
+@media (max-width: 500px) {
+	.container {
+		max-width: 40px;
+		
+	}
+    .mobileVersion{
+        display: none;
+    }
+}

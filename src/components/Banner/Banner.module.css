@@ -31,7 +31,7 @@
 }
 
 .title {
-    font-family: Lovelace;
+    font-family: 'Lovelace';
     font-size: 52px;
     font-weight: 400;
     line-height: 68px;
@@ -86,4 +86,35 @@
 .colorTextButton{
     color: white;
     border: 1px solid white;
+}
+
+
+@media (max-width: 800px) {
+	.container {
+		max-width: 800px;
+        max-height: 745px;
+	}
+    .banner{
+        max-width: 800px;
+        max-height: 400px;
+        background-size: 800px;
+    }
+    .content {
+        top: 180px
+    }
+    .blockContent{
+        max-width: 400px;
+        max-height: 345px;
+        background-size: contain;
+    }
+    .blockDescription{
+        align-items: center;
+        margin-top: 108px;   
+    }
+}
+
+@media (max-width: 800px) {
+	.container {
+		display: none;
+	}
 }

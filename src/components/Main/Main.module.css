@@ -1,6 +1,6 @@
 .container{
     width: 1440px;
-    height: 4693px;
+    max-height: 4693px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,4 +38,70 @@
 }
 .alignButton{
     margin: auto;
+}
+
+@media (max-width: 1280px) {
+	.container {
+		max-width: 1280px;
+        max-height: 5000px;		
+	}
+    .cards{
+        max-width: 1190px;
+    }
+}
+@media (max-width: 1152px) {
+	.container {
+		max-width: 1152px;
+      
+	}
+    .cards{
+        max-width: 1070px;
+    }
+}
+
+@media (max-width: 1024px) {
+	.container {
+		max-width: 1024px;
+      
+	}
+    .cards{
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 800px) {
+	.container {
+		max-width: 800px;
+        max-height: 5000px;		
+	}
+    .cards{
+        max-width: 710px;
+    }
+    .card{
+        max-height: 583px;
+    }
+    .imageCard{
+        max-width: 344px;
+        max-height: 506px;
+    }
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+        max-height: 2700px;	
+        overflow: hidden;
+	}
+    .cards{
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 425px) {
+	.container {
+		max-width: 425px;	
+	}
+    .cards{
+        max-width: 420px;
+    }
 }

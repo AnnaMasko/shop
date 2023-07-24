@@ -5,13 +5,14 @@ import shirt_red from '../../../assets/images/shirt_red.png'
 import overalls_black from '../../../assets/images/overalls_black.png'
 import shirt_ from '../../../assets/images/shirt_.png'
 import shirt_white_classic from '../../../assets/images/shirt_white_classic.png'
+import { Title } from '../../../common/Title/Title'
 
 export const LookBook = () => {
     return (
         <div className={styles.container} >
             <div className={styles.text}>
                 <span>ОТ LOYLEN</span>
-                <span className={styles.title}>LOOKBOOK</span>
+                <Title title='LOOKBOOK' />
                 <span className={styles.margin}>Неповторимые образы, подобранные специально для вас</span>
 
                 <div className={styles.cardClassic_shirt}>

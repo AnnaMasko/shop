@@ -4,6 +4,7 @@
     flex-direction: column;
     font-family: 'Futura PT';
     color: #474A51;
+    align-items: center;
 }
 
 .content {
@@ -40,4 +41,80 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+    .content {
+        max-width: 1220px;
+    }
+}
+
+@media (max-width: 1152px) {
+    .container {
+        max-width: 1152px;
+    }
+    .content {
+        max-width: 1092px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    .content {
+        max-width: 964px;
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
+    .content {
+        max-width: 740px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .content {
+        max-width: 708px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 425px;
+    }
+    .content {
+        max-width: 365px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+    .content {
+        max-width: 300px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+    }
 }

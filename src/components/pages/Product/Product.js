@@ -11,14 +11,13 @@ export const Product = () => {
 
     const addToCard = () =>{
         element.cartCount = 1
-        console.log('кол-во в корзине',element.cartCount)
+        //console.log('кол-во в корзине',element.cartCount)
     }
     
     // console.log(element)
     return (
         <div className={styles.container}>
-            <div className={styles.product}>
-                <div className={styles.imageGallery}>
+             <div className={styles.imageGallery}>
                     <img
                         src={element.image.src}
                         alt={element.image.alt}
@@ -30,7 +29,9 @@ export const Product = () => {
                         className={styles.imageSize}
                     />
                 </div>
-                <div>
+            <div className={styles.product}>
+               
+                <div className={styles.images}>
                     <img
                         src={element.image.src}
                         alt={element.image.alt}

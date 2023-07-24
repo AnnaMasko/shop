@@ -7,3 +7,46 @@
     align-items: center;
     justify-content: space-around;
 }
+
+
+@media (max-width: 1152px) {
+	.container {
+		max-width: 1152px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
+}
+@media (max-width: 800px) {
+	.container {
+		max-width: 800px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+		
+	}
+}
+@media (max-width: 425px) {
+	.container {
+		max-width: 425px;
+		
+	}
+}
+@media (max-width: 375px) {
+	.container {
+		max-width: 375px;
+		
+	}
+}
+@media (max-width: 320px) {
+	.container {
+		max-width: 320px;
+		
+	}
+}
