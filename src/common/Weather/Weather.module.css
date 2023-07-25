@@ -15,3 +15,9 @@
     font-family: 'Futura PT';
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .item{
+        font-size: 14px;
+    }
+}

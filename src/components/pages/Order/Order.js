@@ -12,6 +12,13 @@ export const Order = () => {
     const [checkedFour, setCheckedFour] = useState(false);
     const [checkedFive, setCheckedFive] = useState(false);
 
+    const [checked, setChecked] = useState(false);
+
+    function handleChange({ target }) {
+        const { name, value, type, checked } = target;
+        const stateValue = type === "checkbox" ? checked : value;
+    }
+
     const handleChangeOne = () => {
         setCheckedOne(!checkedOne);
     };
@@ -40,30 +47,56 @@ export const Order = () => {
             
             <div className={styles.deliveryBox}>
                 <span className={styles.subTitle}>Способ доставки</span>
-                <Checkbox
-                    label='Доставка с примеркой (не более 5 товаров)  курьером по Москве (в пределах МКАД) (1-2 дня) 500 ₽'
-                    value={checkedOne}
-                    onChange={handleChangeOne}
-                    addStyles={styles.labelMargin}
-                />
-                <Checkbox
-                    label='Доставка курьером по Москве (в пределах МКАД) (2-3 дня) 300 ₽'
-                    value={checkedTwo}
-                    onChange={handleChangeTwo}
-                    addStyles={styles.labelMargin}
-                />
-                <Checkbox
-                    label='Доставка курьером по Москве (за МКАД)  и Московской области (2-3 дня) 450 ₽'
-                    value={checkedThree}
-                    onChange={handleChangeThree}
-                    addStyles={styles.labelMargin}
-                />
-                <Checkbox
-                    label='Доставка по Росии и миру (срок и стоимость рассчитывается транспортной компанией)'
-                    value={checkedFour}
-                    onChange={handleChangeFour}
-                    addStyles={styles.labelMargin}
-                />
+
+                <div>
+                    <input
+                    className={styles.radio}
+
+                        id='delivery_for_Moskow'
+                        type="radio"
+                        name="delivery"
+                        value='delivery'
+                        onChange={handleChange}
+                    ></input>
+                    <label htmlFor='delivery_for_Moskow'>Доставка с примеркой (не более 5 товаров)  курьером по Москве (в пределах МКАД) (1-2 дня) 500 ₽</label>
+                </div>
+
+                <div >
+                    <input
+className={styles.radio}
+                        id='delivery_for_Moskow_2days'
+                        type="radio"
+                        name="delivery"
+                        value='delivery_for_Moskow_2days'
+                        onChange={handleChange}
+                    ></input>
+                    <label htmlFor='delivery_for_Moskow_2days'>Доставка курьером по Москве (в пределах МКАД) (2-3 дня) 300 ₽</label>
+                </div>
+
+                <div >
+                    <input
+className={styles.radio}
+                        id='delivery_for_oblast'
+                        type="radio"
+                        name="delivery"
+                        value='delivery_for_oblast'
+                        onChange={handleChange}
+                    ></input>
+                    <label htmlFor='delivery_for_oblast'>Доставка курьером по Москве (за МКАД)  и Московской области (2-3 дня) 450 ₽</label>
+                </div>
+
+                <div >
+                    <input
+className={styles.radio}
+                        id='delivery_for_Russia'
+                        type="radio"
+                        name="delivery"
+                        value='delivery_for_Russia'
+                        onChange={handleChange}
+                    ></input>
+                    <label htmlFor='delivery_for_Russia'><span>Доставка по Росии и миру (срок и стоимость рассчитывается транспортной компанией)</span></label>
+                </div>
+         
                 <Checkbox
                     label='Самовывоз из шоурума (при наличии в день заказа) БЕСПЛАТНО'
                     value={checkedFive}

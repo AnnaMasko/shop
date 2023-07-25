@@ -42,9 +42,9 @@ export const Main = () => {
                  handleClick={() => showAll()}
                 
                 />
-                <Lookbook/>
+                
             </div>
-            
+            <Lookbook/>
 
         </div>
     )

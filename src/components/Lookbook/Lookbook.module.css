@@ -19,13 +19,7 @@
     flex-direction: column;
     margin-bottom: 50px;
 }
-.title{
-    font-family: Lovelace;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 68px;
-    color: #474A51;
-}
+
 .text{
     font-family: 'Futura PT';
     font-weight: 400;

@@ -40,6 +40,29 @@
     margin-bottom: 10px;
 }
 
+.radio{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        height: 1200px;
+    }
+
+    .content {
+        width: 1024px;
+    }
+
+    .deliveryBox {
+        max-width: 930px;
+        padding-left: 20px;
+    }
+}
+
+
 @media (max-width: 800px) {
     .container {
         max-width: 800px;
@@ -58,19 +81,19 @@
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 475px) {
     .container {
-        max-width: 300px;
+        max-width: 455px;
         height: 1500px;
     }
 
     .content {
-        width: 320px;
+        width: 420px;
         align-items: center;
     }
 
     .deliveryBox {
-        max-width: 300px;
+        max-width: 420px;
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 50px;
@@ -84,5 +107,19 @@
     .labelMargin {
         width: 12px;
         height: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .content {
+        width: 320px;
+    }
+
+    .deliveryBox {
+        max-width: 300px;
     }
 }

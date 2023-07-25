@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 export const Navigation = ({ showMenu, setShowMenu }) => {
-    console.log(showMenu)
     const [show, isSetShow] = useState(false)
     return (
         <nav className={[showMenu ? styles.mobnav : styles.navigation]}

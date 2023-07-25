@@ -38,7 +38,7 @@ export const Pickup = () => {
 
     return (
         <form className={styles.form}>
-            <div className={`${styles.container} ${styles.containerPickUp}`}>
+            <div className={`${styles.container} ${styles.container}`}>
                 <span className={styles.title}>Получатель</span>
                 <input
                     className={styles.input}

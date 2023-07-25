@@ -1,6 +1,6 @@
 import styles from './App.module.css';
 import { Main } from './components/Main/Main';
-import { Banner } from './components/Banner/Banner';
+
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Route, Routes } from 'react-router';
@@ -10,7 +10,7 @@ import { About } from './components/About/About';
 import { Basket } from './components/Basket/Basket';
 import { Catalog } from './components/pages/Catalog/Catalog';
 import { LookBook } from './components/pages/LookBook/LookBook';
-import { useLocation } from 'react-router';
+
 import { Product } from './components/pages/Product/Product';
 import { Order } from './components/pages/Order/Order';
 import { useState, createContext } from 'react';
@@ -18,7 +18,7 @@ import { useEffect } from 'react';
 
  export const CartContext = createContext();
 const  App = () => {
-  let { state } = useLocation();
+ 
   const [weather, setWeather] = useState({});
   const [showMenu, setShowMenu] = useState(false);
 

@@ -168,7 +168,7 @@ export const OrderInfo = () => {
                     ></input>
                     <label htmlFor='cash'>Наличными или картой при получении в пункте выдачи</label>
                 </div>
-                <span>Итого к оплате: </span>
+                
             </div>
 
 
